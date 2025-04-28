@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "yawm:block/deepwood_slab"
+    },
+    "type=double": {
+      "model": "yawm:block/deepwood_planks"
+    },
+    "type=top": {
+      "model": "yawm:block/deepwood_slab_top"
+    }
+  }
+}

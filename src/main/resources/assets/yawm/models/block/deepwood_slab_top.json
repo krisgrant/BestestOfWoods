@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "yawm:block/deepwood_planks",
+    "side": "yawm:block/deepwood_planks",
+    "top": "yawm:block/deepwood_planks"
+  }
+}
