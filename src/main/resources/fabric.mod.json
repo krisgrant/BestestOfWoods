@@ -3,13 +3,13 @@
 	"id": "yawm",
 	"version": "${version}",
 	"name": "Yet Another Wood Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds new unique and stylish vanilla-looking wood types to Minecraft",
 	"authors": [
-		"Me!"
+		"KrisGra"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/krisgrant/yawm"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/yawm/icon.png",
