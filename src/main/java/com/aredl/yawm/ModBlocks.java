@@ -94,6 +94,20 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPWOOD_FENCE = register(
+            "deepwood_fence",
+            FenceBlock::new,
+            AbstractBlock.Settings.copy(Blocks.PALE_OAK_FENCE).sounds(BlockSoundGroup.NETHER_WOOD).burnable(),
+            true
+    );
+
+    public static final Block DEEPWOOD_FENCE_GATE = register(
+            "deepwood_fence_gate",
+            (settings) -> new FenceGateBlock(WoodType.WARPED, settings),
+            AbstractBlock.Settings.copy(Blocks.PALE_OAK_FENCE_GATE).sounds(BlockSoundGroup.NETHER_WOOD).burnable(),
+            true
+    );
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
@@ -103,6 +117,8 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DEEPWOOD_PLANKS.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_STAIRS.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_FENCE.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);
@@ -115,5 +131,7 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_PLANKS, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_STAIRS, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_SLAB, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_FENCE, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_FENCE_GATE, 5, 5);
     }
 }
