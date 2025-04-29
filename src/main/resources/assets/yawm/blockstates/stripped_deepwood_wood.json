@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "yawm:block/stripped_deepwood_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "yawm:block/stripped_deepwood_wood"
+    },
+    "axis=z": {
+      "model": "yawm:block/stripped_deepwood_wood_horizontal",
+      "x": 90
+    }
+  }
+}

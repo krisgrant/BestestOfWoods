@@ -1,7 +1,9 @@
 {
   "block.yawm.deepwood_log": "Deepwood Log",
+  "block.yawm.deepwood_wood": "Deepwood Wood",
   "block.yawm.stripped_deepwood_log": "Stripped Deepwood Log",
+  "block.yawm.stripped_deepwood_wood": "Stripped Deepwood Wood",
   "block.yawm.deepwood_planks": "Deepwood Planks",
-  "block.yawm.deepwood_slab": "Deepwood Slab",
-  "block.yawm.deepwood_stairs": "Deepwood Stairs"
+  "block.yawm.deepwood_stairs": "Deepwood Stairs",
+  "block.yawm.deepwood_slab": "Deepwood Slab"
 }

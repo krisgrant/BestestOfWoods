@@ -2,9 +2,11 @@
   "replace": false,
   "values": [
     "yawm:deepwood_log",
+    "yawm:deepwood_wood",
     "yawm:stripped_deepwood_log",
+    "yawm:stripped_deepwood_wood",
     "yawm:deepwood_planks",
-    "yawm:deepwood_slab",
-    "yawm:deepwood_stairs"
+    "yawm:deepwood_stairs",
+    "yawm:deepwood_slab"
   ]
 }

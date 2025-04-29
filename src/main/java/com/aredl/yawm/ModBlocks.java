@@ -48,15 +48,28 @@ public class ModBlocks {
     public static final Block DEEPWOOD_LOG = register(
             "deepwood_log",
             PillarBlock::new,
-            // AbstractBlock.Settings.create().sounds(BlockSoundGroup.NETHER_WOOD),
             AbstractBlock.Settings.copy(Blocks.PALE_OAK_LOG).burnable(),
+            true
+    );
+
+    public static final Block DEEPWOOD_WOOD = register(
+            "deepwood_wood",
+            PillarBlock::new,
+            AbstractBlock.Settings.copy(Blocks.PALE_OAK_WOOD).burnable(),
             true
     );
 
     public static final Block STRIPPED_DEEPWOOD_LOG = register(
             "stripped_deepwood_log",
             PillarBlock::new,
-            AbstractBlock.Settings.copy(Blocks.PALE_OAK_LOG).burnable(),
+            AbstractBlock.Settings.copy(Blocks.STRIPPED_PALE_OAK_LOG).burnable(),
+            true
+    );
+
+    public static final Block STRIPPED_DEEPWOOD_WOOD = register(
+            "stripped_deepwood_wood",
+            PillarBlock::new,
+            AbstractBlock.Settings.copy(Blocks.STRIPPED_PALE_OAK_WOOD).burnable(),
             true
     );
 
@@ -67,13 +80,6 @@ public class ModBlocks {
             true
     );
 
-    public static final Block DEEPWOOD_SLAB = register(
-            "deepwood_slab",
-            SlabBlock::new,
-            AbstractBlock.Settings.copy(Blocks.PALE_OAK_SLAB).sounds(BlockSoundGroup.NETHER_WOOD).burnable(),
-            true
-    );
-
     public static final Block DEEPWOOD_STAIRS = register(
             "deepwood_stairs",
             (settings) -> new StairsBlock(ModBlocks.DEEPWOOD_PLANKS.getDefaultState(), settings), // Proper StairsBlock initialization (shut up ai this is WEIRD WHY DO I HAVE TO DO IT LIKE THIS
@@ -81,21 +87,33 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPWOOD_SLAB = register(
+            "deepwood_slab",
+            SlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.PALE_OAK_SLAB).sounds(BlockSoundGroup.NETHER_WOOD).burnable(),
+            true
+    );
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_WOOD.asItem());
             itemGroup.add(ModBlocks.STRIPPED_DEEPWOOD_LOG.asItem());
+            itemGroup.add(ModBlocks.STRIPPED_DEEPWOOD_WOOD.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_PLANKS.asItem());
-            itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_STAIRS.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);
+        StrippableBlockRegistry.register(DEEPWOOD_WOOD, STRIPPED_DEEPWOOD_WOOD);
 
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_DEEPWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_DEEPWOOD_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_PLANKS, 5, 5);
-        FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_SLAB, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_STAIRS, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_SLAB, 5, 5);
     }
 }
