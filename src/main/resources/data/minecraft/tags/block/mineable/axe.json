@@ -9,6 +9,9 @@
     "yawm:deepwood_stairs",
     "yawm:deepwood_slab",
     "yawm:deepwood_fence",
-    "yawm:deepwood_fence_gate"
+    "yawm:deepwood_fence_gate",
+
+    "yawm:deepwood_pressure_plate",
+    "yawm:deepwood_button"
   ]
 }
