@@ -129,6 +129,13 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPWOOD_DOOR = register(
+            "deepwood_door",
+            (settings) -> new DoorBlock(BlockSetType.WARPED, settings),
+            AbstractBlock.Settings.copy(Blocks.PALE_OAK_DOOR).sounds(BlockSoundGroup.NETHER_WOOD).burnable(),
+            true
+    );
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
@@ -140,7 +147,7 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_FENCE.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
-            //itemGroup.add(ModBlocks.DEEPWOOD_DOOR.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_DOOR.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_TRAPDOOR.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_PRESSURE_PLATE.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_BUTTON.asItem());
@@ -158,7 +165,7 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_SLAB, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_FENCE, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_FENCE_GATE, 5, 5);
-        //FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_DOOR, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_DOOR, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_TRAPDOOR, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_PRESSURE_PLATE, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(DEEPWOOD_BUTTON, 5, 5);

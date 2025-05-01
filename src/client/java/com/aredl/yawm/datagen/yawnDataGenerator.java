@@ -8,5 +8,7 @@ public class yawnDataGenerator implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
         pack.addProvider(yawmItemTagProvider::new);
+        pack.addProvider(yawmBlockTagProvider::new);
+        pack.addProvider(yawmBlockLootTableProvider::new);
     }
 }
