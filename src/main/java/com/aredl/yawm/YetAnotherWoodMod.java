@@ -20,6 +20,7 @@ public class YetAnotherWoodMod implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Initializing yet more wood...");
 		ModBlocks.initialize();
+		ModItems.initialize();
 		LOGGER.info("Yet more wood initialized!");
 	}
 }

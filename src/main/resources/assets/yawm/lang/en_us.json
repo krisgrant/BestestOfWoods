@@ -11,5 +11,10 @@
   "block.yawm.deepwood_door": "Deepwood Door",
   "block.yawm.deepwood_trapdoor": "Deepwood Trapdoor",
   "block.yawm.deepwood_pressure_plate": "Deepwood Pressure Plate",
-  "block.yawm.deepwood_button": "Deepwood Button"
+  "block.yawm.deepwood_button": "Deepwood Button",
+
+  "item.yawm.deepwood_boat": "Deepwood Boat",
+  "entity.yawm.deepwood_boat": "Deepwood Boat",
+  "item.yawm.deepwood_chest_boat": "Deepwood Boat with Chest",
+  "entity.yawm.deepwood_chest_boat": "Deepwood Boat with Chest"
 }
