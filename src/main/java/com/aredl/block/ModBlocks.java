@@ -33,7 +33,7 @@ public class ModBlocks {
     );
 
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((itemGroup) -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(itemGroup -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
         });
     }
