@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "bow",
+	"version": "${version}",
+	"name": "Bestest Of Woods",
+	"description": "Yet Another Wood Mod, but this is the Bestest Of Woods... mod(s)",
+	"authors": [
+		"KrisGra"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bow/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.aredl.BestestOfWoods"
+		],
+		"client": [
+			"com.aredl.BestestOfWoodsClient"
+		],
+		"fabric-datagen": [
+			"com.aredl.BestestOfWoodsDataGenerator"
+		]
+	},
+	"mixins": [
+		"bow.mixins.json",
+		{
+			"config": "bow.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

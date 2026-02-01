@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "bow:block/deepwood_log_top",
+    "side": "bow:block/deepwood_log"
+  }
+}
