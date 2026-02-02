@@ -2,6 +2,7 @@ package com.aredl.block;
 
 import com.aredl.BestestOfWoods;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -32,9 +33,57 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPWOOD_WOOD = register(
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.WARPED_HYPHAE).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_wood",
+            true
+    );
+
+    public static final Block STRIPPED_DEEPWOOD_LOG = register(
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_WARPED_STEM).sounds(BlockSoundGroup.WOOD)),
+            "stripped_deepwood_log",
+            true
+    );
+
+    public static final Block STRIPPED_DEEPWOOD_WOOD = register(
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_WARPED_HYPHAE).sounds(BlockSoundGroup.WOOD)),
+            "stripped_deepwood_wood",
+            true
+    );
+
+    public static final Block DEEPWOOD_PLANKS = register(
+            new Block(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_planks",
+            true
+    );
+
+    public static final Block DEEPWOOD_STAIRS = register(
+            new StairsBlock(
+                ModBlocks.DEEPWOOD_PLANKS.getDefaultState(),
+                AbstractBlock.Settings.copy(Blocks.WARPED_STAIRS).sounds(BlockSoundGroup.WOOD)
+            ),
+            "deepwood_stairs",
+            true
+    );
+
+    public static final Block DEEPWOOD_SLAB = register(
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.WARPED_SLAB).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_slab",
+            true
+    );
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(itemGroup -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_WOOD.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_PLANKS.asItem());
+            itemGroup.add(ModBlocks.STRIPPED_DEEPWOOD_LOG.asItem());
+            itemGroup.add(ModBlocks.STRIPPED_DEEPWOOD_WOOD.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_STAIRS.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
         });
+
+        StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);
+        StrippableBlockRegistry.register(DEEPWOOD_WOOD, STRIPPED_DEEPWOOD_WOOD);
     }
 }

@@ -1,4 +1,12 @@
-// 1.21.1	2026-02-01T19:38:46.138085875	Bestest Of Woods/Tags for minecraft:block
-c6759416c9750836c58ffd4db5ebeec744b3b13d data/minecraft/tags/block/logs.json
-c6759416c9750836c58ffd4db5ebeec744b3b13d data/minecraft/tags/block/occludes_vibration_signals.json
-c6759416c9750836c58ffd4db5ebeec744b3b13d data/minecraft/tags/block/dampens_vibrations.json
+// 1.21.1	2026-02-02T19:53:49.206762901	Bestest Of Woods/Tags for minecraft:block
+3ecf459c5ea286f6401dd7e88ca9316ba7382b10 data/minecraft/tags/block/planks.json
+414cf4502ce7993be3fec97f6639a5f338357366 data/minecraft/tags/block/logs.json
+93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/block/logs_that_burn.json
+9a5e84fa283705e073a060c0658b44ef13d17e9e data/minecraft/tags/block/occludes_vibration_signals.json
+94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/block/stairs.json
+414cf4502ce7993be3fec97f6639a5f338357366 data/bow/tags/block/deepwood_logs.json
+94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/block/wooden_stairs.json
+9a5e84fa283705e073a060c0658b44ef13d17e9e data/minecraft/tags/block/dampens_vibrations.json
+3ecf459c5ea286f6401dd7e88ca9316ba7382b10 data/bow/tags/block/deepwood_planks.json
+6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/block/slabs.json
+6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/block/wooden_slabs.json

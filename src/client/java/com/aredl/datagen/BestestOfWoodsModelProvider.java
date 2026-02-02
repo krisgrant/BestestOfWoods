@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.TexturedModel;
 
 public class BestestOfWoodsModelProvider extends FabricModelProvider {
     public BestestOfWoodsModelProvider(FabricDataOutput output) {
@@ -14,7 +13,15 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.DEEPWOOD_LOG, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
+        blockStateModelGenerator.registerLog(ModBlocks.DEEPWOOD_LOG)
+                .log(ModBlocks.DEEPWOOD_LOG)
+                .wood(ModBlocks.DEEPWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DEEPWOOD_LOG)
+                .log(ModBlocks.STRIPPED_DEEPWOOD_LOG)
+                .wood(ModBlocks.STRIPPED_DEEPWOOD_WOOD);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPWOOD_PLANKS)
+                .slab(ModBlocks.DEEPWOOD_SLAB)
+                .stairs(ModBlocks.DEEPWOOD_STAIRS);
     }
 
     @Override

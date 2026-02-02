@@ -1,5 +1,11 @@
 {
   "values": [
+    "bow:deepwood_planks",
+    "bow:deepwood_wood",
+    "bow:stripped_deepwood_log",
+    "bow:stripped_deepwood_wood",
+    "bow:deepwood_stairs",
+    "bow:deepwood_slab",
     "bow:deepwood_log"
   ]
 }

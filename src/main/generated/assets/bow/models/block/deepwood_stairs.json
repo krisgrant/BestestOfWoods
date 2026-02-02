@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "bow:block/deepwood_planks",
+    "side": "bow:block/deepwood_planks",
+    "top": "bow:block/deepwood_planks"
+  }
+}

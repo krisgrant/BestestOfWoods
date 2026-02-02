@@ -1,2 +1,8 @@
-// 1.21.1	2026-02-01T19:38:46.13875301	Bestest Of Woods/Block Loot Tables
+// 1.21.1	2026-02-02T19:53:49.207229067	Bestest Of Woods/Block Loot Tables
+39de84f9054cd05b0369fd21f195cd8fb67fc40e data/bow/loot_table/blocks/deepwood_stairs.json
+e27a2e6c2680cff8b91da604616fc3e5824c0cee data/bow/loot_table/blocks/stripped_deepwood_wood.json
+5d0ef97c3469e3aa20be17985a70bdfe40ad177f data/bow/loot_table/blocks/deepwood_wood.json
 3fa9ba4a7263fd9c488d0296e18a028147740ed9 data/bow/loot_table/blocks/deepwood_log.json
+1430ec8f93dbf89a9564e12bf26bfcc6a22e76a0 data/bow/loot_table/blocks/deepwood_planks.json
+c183b287be4290e019bbcdeabd6b91e3412d288d data/bow/loot_table/blocks/deepwood_slab.json
+2d89ee6818befae0c1ed5a9f9b6050c014735814 data/bow/loot_table/blocks/stripped_deepwood_log.json

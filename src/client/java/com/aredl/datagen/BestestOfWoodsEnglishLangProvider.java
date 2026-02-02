@@ -14,5 +14,11 @@ public class BestestOfWoodsEnglishLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add("block.bow.deepwood_log", "Deepwood Log");
+        translationBuilder.add("block.bow.deepwood_planks", "Deepwood Planks");
+        translationBuilder.add("block.bow.deepwood_wood", "Deepwood Wood");
+        translationBuilder.add("block.bow.stripped_deepwood_log", "Stripped Deepwood Log");
+        translationBuilder.add("block.bow.stripped_deepwood_wood", "Stripped Deepwood Wood");
+        translationBuilder.add("block.bow.deepwood_stairs", "Deepwood Stairs");
+        translationBuilder.add("block.bow.deepwood_slab", "Deepwood Slab");
     }
 }

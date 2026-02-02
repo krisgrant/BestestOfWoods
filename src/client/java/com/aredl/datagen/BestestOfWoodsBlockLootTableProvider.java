@@ -15,5 +15,11 @@ public class BestestOfWoodsBlockLootTableProvider extends FabricBlockLootTablePr
     @Override
     public void generate() {
         addDrop(ModBlocks.DEEPWOOD_LOG);
+        addDrop(ModBlocks.DEEPWOOD_WOOD);
+        addDrop(ModBlocks.DEEPWOOD_PLANKS);
+        addDrop(ModBlocks.STRIPPED_DEEPWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_DEEPWOOD_WOOD);
+        addDrop(ModBlocks.DEEPWOOD_STAIRS);
+        addDrop(ModBlocks.DEEPWOOD_SLAB);
     }
 }

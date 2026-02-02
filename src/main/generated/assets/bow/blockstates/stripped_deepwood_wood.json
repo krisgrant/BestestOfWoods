@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "bow:block/stripped_deepwood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "bow:block/stripped_deepwood_wood"
+    },
+    "axis=z": {
+      "model": "bow:block/stripped_deepwood_wood",
+      "x": 90
+    }
+  }
+}

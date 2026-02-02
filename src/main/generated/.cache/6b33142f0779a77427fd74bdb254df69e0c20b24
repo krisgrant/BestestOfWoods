@@ -1,0 +1,11 @@
+// 1.21.1	2026-02-02T19:53:49.205735218	Bestest Of Woods/Tags for minecraft:item
+93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/item/logs.json
+3ecf459c5ea286f6401dd7e88ca9316ba7382b10 data/minecraft/tags/item/planks.json
+93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/item/logs_that_burn.json
+94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/item/stairs.json
+cd503dc58dcec30c84ae690b345953d51f69aa9f data/minecraft/tags/item/dampens_vibrations.json
+3ecf459c5ea286f6401dd7e88ca9316ba7382b10 data/bow/tags/item/deepwood_planks.json
+94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/item/wooden_stairs.json
+6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/item/slabs.json
+93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/bow/tags/item/deepwood_logs.json
+6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/item/wooden_slabs.json

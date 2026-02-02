@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bow:block/deepwood_slab"
+    },
+    "type=double": {
+      "model": "bow:block/deepwood_planks"
+    },
+    "type=top": {
+      "model": "bow:block/deepwood_slab_top"
+    }
+  }
+}
