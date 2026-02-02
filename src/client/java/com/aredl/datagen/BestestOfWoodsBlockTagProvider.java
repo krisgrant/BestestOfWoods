@@ -71,5 +71,12 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_SLAB);
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(ModBlocks.DEEPWOOD_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.DEEPWOOD_FENCE);
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.DEEPWOOD_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.DEEPWOOD_FENCE_GATE);
     }
 }

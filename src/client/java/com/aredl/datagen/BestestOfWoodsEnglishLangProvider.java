@@ -20,5 +20,7 @@ public class BestestOfWoodsEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.bow.stripped_deepwood_wood", "Stripped Deepwood Wood");
         translationBuilder.add("block.bow.deepwood_stairs", "Deepwood Stairs");
         translationBuilder.add("block.bow.deepwood_slab", "Deepwood Slab");
+        translationBuilder.add("block.bow.deepwood_fence", "Deepwood Fence");
+        translationBuilder.add("block.bow.deepwood_fence_gate", "Deepwood Fence Gate");
     }
 }

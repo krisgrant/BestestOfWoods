@@ -23,7 +23,11 @@ public class BestestOfWoodsRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.DEEPWOOD_STAIRS, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
                 .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
                 .offerTo(recipeExporter);
-        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPWOOD_SLAB, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
+        offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEEPWOOD_SLAB, ModBlocks.DEEPWOOD_PLANKS);
+        createFenceRecipe(ModBlocks.DEEPWOOD_FENCE, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
+                .offerTo(recipeExporter);
+        createFenceGateRecipe(ModBlocks.DEEPWOOD_FENCE_GATE, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
                 .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
                 .offerTo(recipeExporter);
     }

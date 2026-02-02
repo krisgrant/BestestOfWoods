@@ -72,6 +72,21 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPWOOD_FENCE = register(
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.WARPED_FENCE).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_fence",
+            true
+    );
+
+    public static final Block DEEPWOOD_FENCE_GATE = register(
+            new FenceGateBlock(
+                    WoodType.WARPED,
+                    AbstractBlock.Settings.copy(Blocks.WARPED_FENCE_GATE).sounds(BlockSoundGroup.WOOD)
+            ),
+            "deepwood_fence_gate",
+            true
+    );
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(itemGroup -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
@@ -81,6 +96,8 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.STRIPPED_DEEPWOOD_WOOD.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_STAIRS.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_FENCE.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);

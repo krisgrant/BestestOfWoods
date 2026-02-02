@@ -21,6 +21,8 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
                 .wood(ModBlocks.STRIPPED_DEEPWOOD_WOOD);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPWOOD_PLANKS)
                 .slab(ModBlocks.DEEPWOOD_SLAB)
+                .fence(ModBlocks.DEEPWOOD_FENCE)
+                .fenceGate(ModBlocks.DEEPWOOD_FENCE_GATE)
                 .stairs(ModBlocks.DEEPWOOD_STAIRS);
     }
 

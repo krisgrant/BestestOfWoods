@@ -63,5 +63,12 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModBlocks.DEEPWOOD_SLAB.asItem());
         getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
                 .add(ModBlocks.DEEPWOOD_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.FENCES)
+                .add(ModBlocks.DEEPWOOD_FENCE.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
+                .add(ModBlocks.DEEPWOOD_FENCE.asItem());
+        getOrCreateTagBuilder(ItemTags.FENCE_GATES)
+                .add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
     }
 }
