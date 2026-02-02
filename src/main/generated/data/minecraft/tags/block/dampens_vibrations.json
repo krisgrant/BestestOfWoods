@@ -6,6 +6,10 @@
     "bow:stripped_deepwood_wood",
     "bow:deepwood_stairs",
     "bow:deepwood_slab",
+    "bow:deepwood_fence",
+    "bow:deepwood_fence_gate",
+    "bow:deepwood_pressure_plate",
+    "bow:deepwood_button",
     "bow:deepwood_log"
   ]
 }

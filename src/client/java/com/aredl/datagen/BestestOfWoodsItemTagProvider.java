@@ -52,6 +52,10 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModBlocks.STRIPPED_DEEPWOOD_WOOD.asItem())
                 .add(ModBlocks.DEEPWOOD_STAIRS.asItem())
                 .add(ModBlocks.DEEPWOOD_SLAB.asItem())
+                .add(ModBlocks.DEEPWOOD_FENCE.asItem())
+                .add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem())
+                .add(ModBlocks.DEEPWOOD_PRESSURE_PLATE.asItem())
+                .add(ModBlocks.DEEPWOOD_BUTTON.asItem())
                 .add(ModBlocks.DEEPWOOD_LOG.asItem());
 
         getOrCreateTagBuilder(ItemTags.STAIRS)
@@ -70,5 +74,13 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModBlocks.DEEPWOOD_FENCE.asItem());
         getOrCreateTagBuilder(ItemTags.FENCE_GATES)
                 .add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.DEEPWOOD_PRESSURE_PLATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.BUTTONS)
+                .add(ModBlocks.DEEPWOOD_BUTTON.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
+                .add(ModBlocks.DEEPWOOD_BUTTON.asItem());
     }
 }

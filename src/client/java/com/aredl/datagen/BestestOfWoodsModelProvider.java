@@ -23,6 +23,8 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
                 .slab(ModBlocks.DEEPWOOD_SLAB)
                 .fence(ModBlocks.DEEPWOOD_FENCE)
                 .fenceGate(ModBlocks.DEEPWOOD_FENCE_GATE)
+                .pressurePlate(ModBlocks.DEEPWOOD_PRESSURE_PLATE)
+                .button(ModBlocks.DEEPWOOD_BUTTON)
                 .stairs(ModBlocks.DEEPWOOD_STAIRS);
     }
 

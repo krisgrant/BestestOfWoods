@@ -87,6 +87,18 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPWOOD_PRESSURE_PLATE = register(
+            new PressurePlateBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_PRESSURE_PLATE).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_pressure_plate",
+            true
+    );
+
+    public static final Block DEEPWOOD_BUTTON = register(
+            new ButtonBlock(BlockSetType.WARPED, 30, AbstractBlock.Settings.copy(Blocks.WARPED_BUTTON).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_button",
+            true
+    );
+
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(itemGroup -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());

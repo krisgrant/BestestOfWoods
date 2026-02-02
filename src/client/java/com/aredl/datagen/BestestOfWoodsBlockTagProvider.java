@@ -52,6 +52,10 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.STRIPPED_DEEPWOOD_WOOD)
                 .add(ModBlocks.DEEPWOOD_STAIRS)
                 .add(ModBlocks.DEEPWOOD_SLAB)
+                .add(ModBlocks.DEEPWOOD_FENCE)
+                .add(ModBlocks.DEEPWOOD_FENCE_GATE)
+                .add(ModBlocks.DEEPWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.DEEPWOOD_BUTTON)
                 .add(ModBlocks.DEEPWOOD_LOG);
         getOrCreateTagBuilder(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
                 .add(ModBlocks.DEEPWOOD_PLANKS)
@@ -60,6 +64,10 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.STRIPPED_DEEPWOOD_WOOD)
                 .add(ModBlocks.DEEPWOOD_STAIRS)
                 .add(ModBlocks.DEEPWOOD_SLAB)
+                .add(ModBlocks.DEEPWOOD_FENCE)
+                .add(ModBlocks.DEEPWOOD_FENCE_GATE)
+                .add(ModBlocks.DEEPWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.DEEPWOOD_BUTTON)
                 .add(ModBlocks.DEEPWOOD_LOG);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -78,5 +86,15 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.DEEPWOOD_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.DEEPWOOD_PRESSURE_PLATE);
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.DEEPWOOD_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(ModBlocks.DEEPWOOD_BUTTON);
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(ModBlocks.DEEPWOOD_BUTTON);
     }
 }
