@@ -30,6 +30,6 @@ public class BestestOfWoodsEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.bow.deepwood_sign", "Deepwood Sign");
         translationBuilder.add("block.bow.deepwood_hanging_sign", "Deepwood Hanging Sign");
         translationBuilder.add("item.bow.deepwood_boat", "Deepwood Boat");
-        translationBuilder.add("item.bow.deepwood_chest_boat", "Deepwood Chest Boat");
+        translationBuilder.add("item.bow.deepwood_chest_boat", "Deepwood Boat with Chest");
     }
 }
