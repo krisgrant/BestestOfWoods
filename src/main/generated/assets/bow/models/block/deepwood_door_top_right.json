@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "bow:block/deepwood_door_bottom",
+    "top": "bow:block/deepwood_door_top"
+  }
+}

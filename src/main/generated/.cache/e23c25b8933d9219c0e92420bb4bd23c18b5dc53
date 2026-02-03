@@ -1,7 +1,10 @@
-// 1.21.1	2026-02-03T09:04:11.648714703	Bestest Of Woods/Tags for minecraft:block
+// 1.21.1	2026-02-03T10:18:41.611874736	Bestest Of Woods/Tags for minecraft:block
+2b4c3c57b5acbe155e21711e883022211d7e1c3e data/minecraft/tags/block/trapdoors.json
 414cf4502ce7993be3fec97f6639a5f338357366 data/minecraft/tags/block/logs.json
+2b4c3c57b5acbe155e21711e883022211d7e1c3e data/minecraft/tags/block/wooden_trapdoors.json
 ec7ec7641541172650855314bd4b97edcaebf5fc data/minecraft/tags/block/fences.json
 7678900c87ce82e9910632410d0c7ca5aba9c0a6 data/minecraft/tags/block/wooden_pressure_plates.json
+f3727bfd3f90962e8b73b6580465b8f00cce91d3 data/minecraft/tags/block/doors.json
 6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/block/slabs.json
 6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/block/wooden_slabs.json
 afee3e625bf963523582498692263592da433037 data/minecraft/tags/block/buttons.json
@@ -10,10 +13,11 @@ afee3e625bf963523582498692263592da433037 data/minecraft/tags/block/wooden_button
 7678900c87ce82e9910632410d0c7ca5aba9c0a6 data/minecraft/tags/block/pressure_plates.json
 93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/block/logs_that_burn.json
 fc7a30a5c95c233132e33eea1d0ec84ef954b657 data/minecraft/tags/block/fence_gates.json
-704984daaa851707b2f94f4f6fa868e424b5e676 data/minecraft/tags/block/occludes_vibration_signals.json
+969f5abca17e8b8b505cc4527de4253434658b11 data/minecraft/tags/block/occludes_vibration_signals.json
 94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/block/stairs.json
+f3727bfd3f90962e8b73b6580465b8f00cce91d3 data/minecraft/tags/block/wooden_doors.json
 ec7ec7641541172650855314bd4b97edcaebf5fc data/minecraft/tags/block/wooden_fences.json
 414cf4502ce7993be3fec97f6639a5f338357366 data/bow/tags/block/deepwood_logs.json
 94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/block/wooden_stairs.json
-704984daaa851707b2f94f4f6fa868e424b5e676 data/minecraft/tags/block/dampens_vibrations.json
+969f5abca17e8b8b505cc4527de4253434658b11 data/minecraft/tags/block/dampens_vibrations.json
 3ecf459c5ea286f6401dd7e88ca9316ba7382b10 data/bow/tags/block/deepwood_planks.json

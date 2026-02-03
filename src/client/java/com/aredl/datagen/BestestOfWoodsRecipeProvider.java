@@ -37,5 +37,11 @@ public class BestestOfWoodsRecipeProvider extends FabricRecipeProvider {
                 .group("wooden_button")
                 .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
                 .offerTo(recipeExporter);
+        createTrapdoorRecipe(ModBlocks.DEEPWOOD_TRAPDOOR, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
+                .offerTo(recipeExporter);
+        createDoorRecipe(ModBlocks.DEEPWOOD_DOOR, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
+                .offerTo(recipeExporter);
     }
 }

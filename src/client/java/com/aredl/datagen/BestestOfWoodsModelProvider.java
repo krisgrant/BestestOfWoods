@@ -26,6 +26,8 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
                 .pressurePlate(ModBlocks.DEEPWOOD_PRESSURE_PLATE)
                 .button(ModBlocks.DEEPWOOD_BUTTON)
                 .stairs(ModBlocks.DEEPWOOD_STAIRS);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.DEEPWOOD_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.DEEPWOOD_DOOR);
     }
 
     @Override

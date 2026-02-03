@@ -100,6 +100,18 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPWOOD_TRAPDOOR = register(
+            new TrapdoorBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_TRAPDOOR).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_trapdoor",
+            true
+    );
+
+    public static final Block DEEPWOOD_DOOR = register(
+            new DoorBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_DOOR).sounds(BlockSoundGroup.WOOD)),
+            "deepwood_door",
+            true
+    );
+
     public static final RegistryKey<ItemGroup> BOW_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BestestOfWoods.MOD_ID, "item_group"));
     public static final ItemGroup BOW_ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModBlocks.DEEPWOOD_LOG))
@@ -121,6 +133,8 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_PRESSURE_PLATE.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_BUTTON.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_TRAPDOOR.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_DOOR.asItem());
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);

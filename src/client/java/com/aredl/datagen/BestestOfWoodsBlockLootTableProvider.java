@@ -25,5 +25,7 @@ public class BestestOfWoodsBlockLootTableProvider extends FabricBlockLootTablePr
         addDrop(ModBlocks.DEEPWOOD_FENCE_GATE);
         addDrop(ModBlocks.DEEPWOOD_PRESSURE_PLATE);
         addDrop(ModBlocks.DEEPWOOD_BUTTON);
+        addDrop(ModBlocks.DEEPWOOD_TRAPDOOR);
+        addDrop(ModBlocks.DEEPWOOD_DOOR, this::doorDrops);
     }
 }

@@ -1,9 +1,13 @@
-// 1.21.1	2026-02-03T09:04:11.649985598	Bestest Of Woods/Recipes
+// 1.21.1	2026-02-03T10:18:41.612807034	Bestest Of Woods/Recipes
 2d29c8789a14ca712ef377dff90094f35a15e323 data/bow/advancement/recipes/building_blocks/deepwood_slab.json
+22df59ca3fa4c3cfb8612499160823eb5a3bae48 data/bow/recipe/deepwood_trapdoor.json
 cf3a32807d2ddaabe4195e80ebeb9b845c7cfbfb data/bow/recipe/deepwood_stairs.json
 f2263360076bb0e8074a5d4ac969059b3e18a46c data/bow/recipe/stripped_deepwood_wood.json
+9ace0a706eb2c3bad63ab7bb2f4d5d13ea3782cc data/bow/recipe/deepwood_door.json
+f1a76d0cb248a0c865ed024d05395d13568dd659 data/bow/advancement/recipes/redstone/deepwood_door.json
 647ba829ef04806ba23736f67f0e883f8ddf73d4 data/bow/advancement/recipes/building_blocks/deepwood_wood.json
 506a5b67695e802d7cbe83fdc2ef00471823f69a data/bow/recipe/deepwood_fence_gate.json
+ea714fa4a5e831bd736be7a8af40fb5879cce063 data/bow/advancement/recipes/redstone/deepwood_trapdoor.json
 0b2b73375111ae0a374b7d7787de23812ab04f1f data/bow/advancement/recipes/redstone/deepwood_fence_gate.json
 f442f5e1e9c71b9fe92209655dec9f33a8cd4525 data/bow/advancement/recipes/building_blocks/stripped_deepwood_wood.json
 e9f93dd14b503a909140249b2f1adeeba525b85f data/bow/recipe/deepwood_pressure_plate.json

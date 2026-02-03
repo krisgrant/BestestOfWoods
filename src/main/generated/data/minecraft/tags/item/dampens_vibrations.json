@@ -10,6 +10,8 @@
     "bow:deepwood_fence_gate",
     "bow:deepwood_pressure_plate",
     "bow:deepwood_button",
+    "bow:deepwood_trapdoor",
+    "bow:deepwood_door",
     "bow:deepwood_log"
   ]
 }
