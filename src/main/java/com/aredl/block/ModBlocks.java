@@ -1,15 +1,16 @@
 package com.aredl.block;
 
 import com.aredl.BestestOfWoods;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -99,8 +100,16 @@ public class ModBlocks {
             true
     );
 
+    public static final RegistryKey<ItemGroup> BOW_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BestestOfWoods.MOD_ID, "item_group"));
+    public static final ItemGroup BOW_ITEM_GROUP = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(ModBlocks.DEEPWOOD_LOG))
+            .displayName(Text.translatable("itemGroup.bestestOfWoods"))
+            .build();
+
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(itemGroup -> {
+        Registry.register(Registries.ITEM_GROUP, BOW_ITEM_GROUP_KEY, BOW_ITEM_GROUP);
+
+        ItemGroupEvents.modifyEntriesEvent(BOW_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_WOOD.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_PLANKS.asItem());
@@ -110,6 +119,8 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_FENCE.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_PRESSURE_PLATE.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_BUTTON.asItem());
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);

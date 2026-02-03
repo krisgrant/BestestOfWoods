@@ -1,11 +1,11 @@
-// 1.21.1	2026-02-02T22:30:31.581364767	Bestest Of Woods/BestestOfWoodsModelProvider
+// 1.21.1	2026-02-03T09:04:11.650633359	Bestest Of Woods/BestestOfWoodsModelProvider
 668c5a1f95a59b0588416b1a0e3b9990d81235e7 assets/bow/models/item/deepwood_pressure_plate.json
 01dd6003904937984522148ea76c2f20a1b58df2 assets/bow/models/block/deepwood_stairs_outer.json
 45c74f898d2b93e40cbc09b0fe4fbab4481a2f38 assets/bow/models/block/deepwood_fence_gate_open.json
 3ec6a04030d0bd1053a9d3d150676c5c3ca03293 assets/bow/models/block/deepwood_fence_post.json
 faf4f1e071573b3c1542811dd8edd9d005f4c974 assets/bow/models/block/stripped_deepwood_log_horizontal.json
-ed044568776ef9046c4f8ef2802c6276a19f78c3 assets/bow/models/block/deepwood_fence_gate_wall_open.json
 4a8028999c8447b7f66dc5e2c79c9b18dd85dc77 assets/bow/blockstates/deepwood_slab.json
+ed044568776ef9046c4f8ef2802c6276a19f78c3 assets/bow/models/block/deepwood_fence_gate_wall_open.json
 6e3060f29fc21e2458bf777c5ea1a864688fd80b assets/bow/models/item/deepwood_log.json
 30215c943f2a4af016e931d7588276a9cb3e2233 assets/bow/models/block/deepwood_fence_side.json
 e97fc5f12ef9292d9c7cb3844aeb070a67c2b0fd assets/bow/blockstates/deepwood_wood.json
@@ -16,8 +16,8 @@ b5331e3957be3d4a71b6adc6a5e710730e8094d4 assets/bow/models/block/deepwood_log.js
 55f77ab7b060482fdb50143a7eb20346a743b227 assets/bow/models/block/deepwood_pressure_plate.json
 f3e36df3549fe9c4694be84f4abfd23475fe2de8 assets/bow/blockstates/stripped_deepwood_log.json
 908e7f90e46a90abb269c408dabb2bf63cdc3ebf assets/bow/models/block/deepwood_button_inventory.json
-64b5a13dc7784519b41d04e106380bea5046129a assets/bow/models/block/deepwood_button.json
 00d848b8eebe0f97f9fc3b17b15aaa1e635172c0 assets/bow/models/block/deepwood_planks.json
+64b5a13dc7784519b41d04e106380bea5046129a assets/bow/models/block/deepwood_button.json
 a9a386714076f4489a79b9973841b280b4cea488 assets/bow/models/block/deepwood_fence_gate.json
 029609a91237f33e60b7ae0ddc12eaca268550f9 assets/bow/models/item/deepwood_slab.json
 f378c816e1941907ac08d050fd06194d59513336 assets/bow/models/item/deepwood_fence.json

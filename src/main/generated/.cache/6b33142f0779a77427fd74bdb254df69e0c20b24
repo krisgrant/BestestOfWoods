@@ -1,7 +1,7 @@
-// 1.21.1	2026-02-02T22:30:31.519642733	Bestest Of Woods/Tags for minecraft:item
+// 1.21.1	2026-02-03T09:04:11.622255436	Bestest Of Woods/Tags for minecraft:item
 93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/item/logs.json
-94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/item/stairs.json
 93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/item/logs_that_burn.json
+94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/item/stairs.json
 ec7ec7641541172650855314bd4b97edcaebf5fc data/minecraft/tags/item/fences.json
 afee3e625bf963523582498692263592da433037 data/minecraft/tags/item/wooden_buttons.json
 6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/item/slabs.json
