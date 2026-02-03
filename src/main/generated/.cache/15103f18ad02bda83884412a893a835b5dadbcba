@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-03T14:11:11.447873692	Bestest Of Woods/BestestOfWoodsModelProvider
+// 1.21.1	2026-02-03T17:05:26.010624623	Bestest Of Woods/BestestOfWoodsModelProvider
 7084048ea8d7ea16b79d800ced3da12fb7fa13df assets/bow/models/block/deepwood_door_top_right.json
 668c5a1f95a59b0588416b1a0e3b9990d81235e7 assets/bow/models/item/deepwood_pressure_plate.json
 45c74f898d2b93e40cbc09b0fe4fbab4481a2f38 assets/bow/models/block/deepwood_fence_gate_open.json
@@ -15,6 +15,7 @@ f3e36df3549fe9c4694be84f4abfd23475fe2de8 assets/bow/blockstates/stripped_deepwoo
 5df030fc3b66d0184cc609246f11f71e77f6bcea assets/bow/models/block/deepwood_trapdoor_bottom.json
 908e7f90e46a90abb269c408dabb2bf63cdc3ebf assets/bow/models/block/deepwood_button_inventory.json
 00d848b8eebe0f97f9fc3b17b15aaa1e635172c0 assets/bow/models/block/deepwood_planks.json
+e4271524a86141093c94c578943562dc81204f9d assets/bow/models/item/deepwood_boat.json
 15edd100cdda283a8fc534e2d0c58219b23953d5 assets/bow/models/block/deepwood_sign.json
 029609a91237f33e60b7ae0ddc12eaca268550f9 assets/bow/models/item/deepwood_slab.json
 a9a386714076f4489a79b9973841b280b4cea488 assets/bow/models/block/deepwood_fence_gate.json
@@ -24,6 +25,7 @@ f2de4554ba4122b56a518421996057af6d096181 assets/bow/models/block/deepwood_pressu
 9af7025865c4e445ece64eeb17c0234fe5957aef assets/bow/blockstates/deepwood_wall_hanging_sign.json
 855ed30aaa41ef759aec806d98929ae014b2614b assets/bow/models/block/deepwood_fence_inventory.json
 2af20383b3970679fbc4274141875f2a1e5e67cb assets/bow/blockstates/deepwood_sign.json
+702ef29ac14df03fffcaec0a261815b7f6398386 assets/bow/models/item/deepwood_chest_boat.json
 e82925302ab25736cca864094a599938454ebb9b assets/bow/models/block/deepwood_door_top_left.json
 5714d061692073a2f8491b241ac2e2be98afaaef assets/bow/models/block/stripped_deepwood_wood.json
 86908db879b6374d1fc7868292c892bf65494ca8 assets/bow/models/block/deepwood_door_top_left_open.json

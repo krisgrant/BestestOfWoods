@@ -203,6 +203,8 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DEEPWOOD_DOOR.asItem());
             itemGroup.add(ModItems.DEEPWOOD_SIGN);
             itemGroup.add(ModItems.DEEPWOOD_HANGING_SIGN);
+            itemGroup.add(ModItems.DEEPWOOD_BOAT);
+            itemGroup.add(ModItems.DEEPWOOD_CHEST_BOAT);
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);

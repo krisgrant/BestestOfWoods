@@ -102,5 +102,11 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModItems.DEEPWOOD_SIGN);
         getOrCreateTagBuilder(ItemTags.HANGING_SIGNS)
                 .add(ModItems.DEEPWOOD_HANGING_SIGN);
+
+        getOrCreateTagBuilder(ItemTags.BOATS)
+                .add(ModItems.DEEPWOOD_BOAT)
+                .add(ModItems.DEEPWOOD_CHEST_BOAT);
+        getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
+                .add(ModItems.DEEPWOOD_CHEST_BOAT);
     }
 }

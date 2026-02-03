@@ -1,6 +1,7 @@
 package com.aredl;
 
 import com.aredl.block.ModBlocks;
+import com.aredl.entity.ModBoats;
 import com.aredl.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -22,6 +23,7 @@ public class BestestOfWoods implements ModInitializer {
 		// Proceed with mild caution.
 		ModBlocks.initialize();
 		ModItems.initialize();
+		ModBoats.initialize();
 		LOGGER.info("Initialized, BOW!");
 	}
 }

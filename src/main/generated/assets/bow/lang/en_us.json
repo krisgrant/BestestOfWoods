@@ -14,5 +14,7 @@
   "block.bow.deepwood_wood": "Deepwood Wood",
   "block.bow.stripped_deepwood_log": "Stripped Deepwood Log",
   "block.bow.stripped_deepwood_wood": "Stripped Deepwood Wood",
+  "item.bow.deepwood_boat": "Deepwood Boat",
+  "item.bow.deepwood_chest_boat": "Deepwood Chest Boat",
   "itemGroup.bestestOfWoods": "Bestest Of Woods"
 }

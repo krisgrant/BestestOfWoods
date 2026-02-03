@@ -1,10 +1,12 @@
 package com.aredl.datagen;
 
 import com.aredl.block.ModBlocks;
+import com.aredl.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 
 public class BestestOfWoodsModelProvider extends FabricModelProvider {
     public BestestOfWoodsModelProvider(FabricDataOutput output) {
@@ -34,6 +36,8 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.DEEPWOOD_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEEPWOOD_CHEST_BOAT, Models.GENERATED);
     }
 
     @Override

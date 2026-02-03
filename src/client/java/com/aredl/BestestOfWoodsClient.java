@@ -1,6 +1,8 @@
 package com.aredl;
 
 import com.aredl.block.ModBlocks;
+import com.aredl.entity.ModBoats;
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
@@ -11,5 +13,7 @@ public class BestestOfWoodsClient implements ClientModInitializer {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_TRAPDOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_DOOR, RenderLayer.getCutout());
+
+		TerraformBoatClientHelper.registerModelLayers(ModBoats.DEEPWOOD_BOAT_ID, false);
 	}
 }
