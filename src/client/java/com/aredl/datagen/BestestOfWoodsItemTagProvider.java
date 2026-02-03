@@ -2,6 +2,7 @@ package com.aredl.datagen;
 
 import com.aredl.BestestOfWoods;
 import com.aredl.block.ModBlocks;
+import com.aredl.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Item;
@@ -58,6 +59,8 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModBlocks.DEEPWOOD_BUTTON.asItem())
                 .add(ModBlocks.DEEPWOOD_TRAPDOOR.asItem())
                 .add(ModBlocks.DEEPWOOD_DOOR.asItem())
+                .add(ModItems.DEEPWOOD_SIGN)
+                .add(ModItems.DEEPWOOD_HANGING_SIGN)
                 .add(ModBlocks.DEEPWOOD_LOG.asItem());
 
         getOrCreateTagBuilder(ItemTags.STAIRS)
@@ -94,5 +97,10 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModBlocks.DEEPWOOD_DOOR.asItem());
         getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
                 .add(ModBlocks.DEEPWOOD_DOOR.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SIGNS)
+                .add(ModItems.DEEPWOOD_SIGN);
+        getOrCreateTagBuilder(ItemTags.HANGING_SIGNS)
+                .add(ModItems.DEEPWOOD_HANGING_SIGN);
     }
 }

@@ -1,6 +1,7 @@
 package com.aredl.datagen;
 
 import com.aredl.block.ModBlocks;
+import com.aredl.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -41,6 +42,10 @@ public class BestestOfWoodsRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
                 .offerTo(recipeExporter);
         createDoorRecipe(ModBlocks.DEEPWOOD_DOOR, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
+                .offerTo(recipeExporter);
+        offerHangingSignRecipe(recipeExporter, ModItems.DEEPWOOD_HANGING_SIGN, ModBlocks.STRIPPED_DEEPWOOD_LOG);
+        createSignRecipe(ModItems.DEEPWOOD_SIGN, Ingredient.ofItems(ModBlocks.DEEPWOOD_PLANKS))
                 .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
                 .offerTo(recipeExporter);
     }

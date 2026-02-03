@@ -58,6 +58,10 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_BUTTON)
                 .add(ModBlocks.DEEPWOOD_TRAPDOOR)
                 .add(ModBlocks.DEEPWOOD_DOOR)
+                .add(ModBlocks.DEEPWOOD_SIGN)
+                .add(ModBlocks.DEEPWOOD_WALL_SIGN)
+                .add(ModBlocks.DEEPWOOD_HANGING_SIGN)
+                .add(ModBlocks.DEEPWOOD_WALL_HANGING_SIGN)
                 .add(ModBlocks.DEEPWOOD_LOG);
         getOrCreateTagBuilder(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
                 .add(ModBlocks.DEEPWOOD_PLANKS)
@@ -72,6 +76,10 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_BUTTON)
                 .add(ModBlocks.DEEPWOOD_TRAPDOOR)
                 .add(ModBlocks.DEEPWOOD_DOOR)
+                .add(ModBlocks.DEEPWOOD_SIGN)
+                .add(ModBlocks.DEEPWOOD_WALL_SIGN)
+                .add(ModBlocks.DEEPWOOD_HANGING_SIGN)
+                .add(ModBlocks.DEEPWOOD_WALL_HANGING_SIGN)
                 .add(ModBlocks.DEEPWOOD_LOG);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -110,5 +118,18 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_DOOR);
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(ModBlocks.DEEPWOOD_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.SIGNS)
+                .add(ModBlocks.DEEPWOOD_SIGN)
+                .add(ModBlocks.DEEPWOOD_WALL_SIGN);
+        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.DEEPWOOD_SIGN);
+        getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+                .add(ModBlocks.DEEPWOOD_WALL_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
+                .add(ModBlocks.DEEPWOOD_HANGING_SIGN);
+        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.DEEPWOOD_WALL_HANGING_SIGN);
     }
 }

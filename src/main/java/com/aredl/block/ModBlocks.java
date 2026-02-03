@@ -1,10 +1,17 @@
 package com.aredl.block;
 
 import com.aredl.BestestOfWoods;
+import com.aredl.item.ModItems;
+import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.api.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -89,28 +96,87 @@ public class ModBlocks {
     );
 
     public static final Block DEEPWOOD_PRESSURE_PLATE = register(
-            new PressurePlateBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_PRESSURE_PLATE).sounds(BlockSoundGroup.WOOD)),
+            new PressurePlateBlock(
+                    BlockSetType.WARPED,
+                    AbstractBlock.Settings.copy(Blocks.WARPED_PRESSURE_PLATE).sounds(BlockSoundGroup.WOOD)
+            ),
             "deepwood_pressure_plate",
             true
     );
 
     public static final Block DEEPWOOD_BUTTON = register(
-            new ButtonBlock(BlockSetType.WARPED, 30, AbstractBlock.Settings.copy(Blocks.WARPED_BUTTON).sounds(BlockSoundGroup.WOOD)),
+            new ButtonBlock(
+                    BlockSetType.WARPED,
+                    30,
+                    AbstractBlock.Settings.copy(Blocks.WARPED_BUTTON).sounds(BlockSoundGroup.WOOD)
+            ),
             "deepwood_button",
             true
     );
 
     public static final Block DEEPWOOD_TRAPDOOR = register(
-            new TrapdoorBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_TRAPDOOR).sounds(BlockSoundGroup.WOOD)),
+            new TrapdoorBlock(
+                    BlockSetType.WARPED,
+                    AbstractBlock.Settings.copy(Blocks.WARPED_TRAPDOOR).sounds(BlockSoundGroup.WOOD)
+            ),
             "deepwood_trapdoor",
             true
     );
 
     public static final Block DEEPWOOD_DOOR = register(
-            new DoorBlock(BlockSetType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_DOOR).sounds(BlockSoundGroup.WOOD)),
+            new DoorBlock(
+                    BlockSetType.WARPED,
+                    AbstractBlock.Settings.copy(Blocks.WARPED_DOOR).sounds(BlockSoundGroup.WOOD)
+            ),
             "deepwood_door",
             true
     );
+
+    public static final Identifier DEEPWOOD_SIGN_TEXTURE = Identifier.of(BestestOfWoods.MOD_ID, "entity/signs/deepwood");
+    public static final Identifier DEEPWOOD_HANGING_SIGN_TEXTURE = Identifier.of(BestestOfWoods.MOD_ID, "entity/signs/hanging/deepwood");
+    public static final Identifier DEEPWOOD_HANGING_GUI_SIGN_TEXTURE = Identifier.of(BestestOfWoods.MOD_ID, "textures/gui/hanging_signs/deepwood");
+
+    public static final Block DEEPWOOD_SIGN = register(
+            new TerraformSignBlock(
+                    DEEPWOOD_SIGN_TEXTURE,
+                    WoodType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_SIGN)
+            ),
+            "deepwood_sign",
+            false
+    );
+    public static final Block DEEPWOOD_WALL_SIGN = register(
+            new TerraformWallSignBlock(
+                    DEEPWOOD_SIGN_TEXTURE,
+                    WoodType.WARPED,
+                    AbstractBlock.Settings.copy(Blocks.WARPED_WALL_SIGN).dropsLike(DEEPWOOD_SIGN)
+            ),
+            "deepwood_wall_sign",
+            false
+    );
+    public static final Block DEEPWOOD_HANGING_SIGN = register(
+            new TerraformHangingSignBlock(
+                    DEEPWOOD_HANGING_SIGN_TEXTURE,
+                    DEEPWOOD_HANGING_GUI_SIGN_TEXTURE,
+                    WoodType.WARPED, AbstractBlock.Settings.copy(Blocks.WARPED_HANGING_SIGN)
+            ),
+            "deepwood_hanging_sign",
+            false
+    );
+    public static final Block DEEPWOOD_WALL_HANGING_SIGN = register(
+            new TerraformWallHangingSignBlock(DEEPWOOD_HANGING_SIGN_TEXTURE,
+                    DEEPWOOD_HANGING_GUI_SIGN_TEXTURE,
+                    WoodType.WARPED,
+                    AbstractBlock.Settings.copy(Blocks.WARPED_WALL_HANGING_SIGN).dropsLike(DEEPWOOD_HANGING_SIGN)
+            ),
+            "deepwood_wall_hanging_sign",
+            false
+    );
+
+    public static final BlockFamily DEEPWOOD_FAMILY = BlockFamilies.register(ModBlocks.DEEPWOOD_PLANKS)
+            .sign(ModBlocks.DEEPWOOD_SIGN, ModBlocks.DEEPWOOD_WALL_SIGN)
+            .group("wooden")
+            .unlockCriterionName("has_planks")
+            .build();
 
     public static final RegistryKey<ItemGroup> BOW_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(BestestOfWoods.MOD_ID, "item_group"));
     public static final ItemGroup BOW_ITEM_GROUP = FabricItemGroup.builder()
@@ -135,6 +201,8 @@ public class ModBlocks {
             itemGroup.add(ModBlocks.DEEPWOOD_BUTTON.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_TRAPDOOR.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_DOOR.asItem());
+            itemGroup.add(ModItems.DEEPWOOD_SIGN);
+            itemGroup.add(ModItems.DEEPWOOD_HANGING_SIGN);
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);

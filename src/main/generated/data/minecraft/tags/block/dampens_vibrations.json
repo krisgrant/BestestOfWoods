@@ -12,6 +12,10 @@
     "bow:deepwood_button",
     "bow:deepwood_trapdoor",
     "bow:deepwood_door",
+    "bow:deepwood_sign",
+    "bow:deepwood_wall_sign",
+    "bow:deepwood_hanging_sign",
+    "bow:deepwood_wall_hanging_sign",
     "bow:deepwood_log"
   ]
 }

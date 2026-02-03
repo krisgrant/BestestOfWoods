@@ -1,10 +1,12 @@
-// 1.21.1	2026-02-03T10:18:41.61073736	Bestest Of Woods/Tags for minecraft:item
+// 1.21.1	2026-02-03T14:11:11.445052154	Bestest Of Woods/Tags for minecraft:item
 93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/item/logs.json
 2b4c3c57b5acbe155e21711e883022211d7e1c3e data/minecraft/tags/item/wooden_trapdoors.json
 f3727bfd3f90962e8b73b6580465b8f00cce91d3 data/minecraft/tags/item/doors.json
 f3727bfd3f90962e8b73b6580465b8f00cce91d3 data/minecraft/tags/item/wooden_doors.json
-94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/item/stairs.json
+4e80d1c37d7cc224d7f44bac90431f859e904ee6 data/minecraft/tags/item/signs.json
+3068b3e165fb92359d866a17abbb64d33a947319 data/minecraft/tags/item/hanging_signs.json
 93bae4bcd63dcea9c2861bb3ae58f5397f4e700d data/minecraft/tags/item/logs_that_burn.json
+94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/item/stairs.json
 ec7ec7641541172650855314bd4b97edcaebf5fc data/minecraft/tags/item/fences.json
 afee3e625bf963523582498692263592da433037 data/minecraft/tags/item/wooden_buttons.json
 6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/item/slabs.json
@@ -15,7 +17,7 @@ ec7ec7641541172650855314bd4b97edcaebf5fc data/minecraft/tags/item/wooden_fences.
 fc7a30a5c95c233132e33eea1d0ec84ef954b657 data/minecraft/tags/item/fence_gates.json
 7678900c87ce82e9910632410d0c7ca5aba9c0a6 data/minecraft/tags/item/wooden_pressure_plates.json
 afee3e625bf963523582498692263592da433037 data/minecraft/tags/item/buttons.json
-cec871a56c15bea27fbf26ee20eae60d215a8ba9 data/minecraft/tags/item/dampens_vibrations.json
+634cac1180f1c976672a0ae2785c6566f36dba96 data/minecraft/tags/item/dampens_vibrations.json
 3ecf459c5ea286f6401dd7e88ca9316ba7382b10 data/bow/tags/item/deepwood_planks.json
 94a603cf502b545371f3dadbd57207c9f465cc0a data/minecraft/tags/item/wooden_stairs.json
 6627e6d52e9044e32f2614d8a92fa631cccf2bbd data/minecraft/tags/item/wooden_slabs.json

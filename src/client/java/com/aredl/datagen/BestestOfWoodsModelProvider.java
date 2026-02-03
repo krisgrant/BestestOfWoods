@@ -25,9 +25,11 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
                 .fenceGate(ModBlocks.DEEPWOOD_FENCE_GATE)
                 .pressurePlate(ModBlocks.DEEPWOOD_PRESSURE_PLATE)
                 .button(ModBlocks.DEEPWOOD_BUTTON)
-                .stairs(ModBlocks.DEEPWOOD_STAIRS);
+                .stairs(ModBlocks.DEEPWOOD_STAIRS)
+                .family(ModBlocks.DEEPWOOD_FAMILY);
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.DEEPWOOD_TRAPDOOR);
         blockStateModelGenerator.registerDoor(ModBlocks.DEEPWOOD_DOOR);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_DEEPWOOD_LOG, ModBlocks.DEEPWOOD_HANGING_SIGN, ModBlocks.DEEPWOOD_WALL_HANGING_SIGN);
     }
 
     @Override

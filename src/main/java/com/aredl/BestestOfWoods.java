@@ -1,6 +1,7 @@
 package com.aredl;
 
 import com.aredl.block.ModBlocks;
+import com.aredl.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class BestestOfWoods implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModBlocks.initialize();
+		ModItems.initialize();
 		LOGGER.info("Initialized, BOW!");
 	}
 }
