@@ -49,6 +49,6 @@ public class BestestOfWoodsRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.DEEPWOOD_PLANKS), conditionsFromItem(ModBlocks.DEEPWOOD_PLANKS))
                 .offerTo(recipeExporter);
         offerBoatRecipe(recipeExporter, ModItems.DEEPWOOD_BOAT, ModBlocks.DEEPWOOD_PLANKS);
-        offerChestBoatRecipe(recipeExporter, ModItems.DEEPWOOD_CHEST_BOAT, ModBlocks.DEEPWOOD_PLANKS);
+        offerChestBoatRecipe(recipeExporter, ModItems.DEEPWOOD_CHEST_BOAT, ModItems.DEEPWOOD_BOAT);
     }
 }
