@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 
 public class BestestOfWoodsModelProvider extends FabricModelProvider {
     public BestestOfWoodsModelProvider(FabricDataOutput output) {
@@ -32,6 +33,8 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.DEEPWOOD_TRAPDOOR);
         blockStateModelGenerator.registerDoor(ModBlocks.DEEPWOOD_DOOR);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_DEEPWOOD_LOG, ModBlocks.DEEPWOOD_HANGING_SIGN, ModBlocks.DEEPWOOD_WALL_HANGING_SIGN);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.DEEPWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerSingleton(ModBlocks.DEEPWOOD_LEAVES, TexturedModel.LEAVES);
     }
 
     @Override

@@ -13,6 +13,7 @@ public class BestestOfWoodsClient implements ClientModInitializer {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_TRAPDOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_DOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_SAPLING, RenderLayer.getCutout());
 
 		TerraformBoatClientHelper.registerModelLayers(ModBoats.DEEPWOOD_BOAT_ID, false);
 	}

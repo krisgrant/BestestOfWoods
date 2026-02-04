@@ -3,6 +3,7 @@ package com.aredl;
 import com.aredl.block.ModBlocks;
 import com.aredl.entity.ModBoats;
 import com.aredl.item.ModItems;
+import com.aredl.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -24,6 +25,7 @@ public class BestestOfWoods implements ModInitializer {
 		ModBlocks.initialize();
 		ModItems.initialize();
 		ModBoats.initialize();
+		ModWorldGeneration.generateModWorldGen();
 		LOGGER.info("Initialized, BOW!");
 	}
 }

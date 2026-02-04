@@ -2,6 +2,7 @@ package com.aredl.block;
 
 import com.aredl.BestestOfWoods;
 import com.aredl.item.ModItems;
+import com.aredl.world.tree.ModSaplingGenerators;
 import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;
@@ -184,6 +185,18 @@ public class ModBlocks {
             .displayName(Text.translatable("itemGroup.bestestOfWoods"))
             .build();
 
+    public static final Block DEEPWOOD_SAPLING = register(
+            new SaplingBlock(ModSaplingGenerators.DEEPWOOD, AbstractBlock.Settings.copy(Blocks.ACACIA_SAPLING)),
+            "deepwood_sapling",
+            true
+    );
+
+    public static final Block DEEPWOOD_LEAVES = register(
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_LEAVES)),
+            "deepwood_leaves",
+            true
+    );
+
     public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, BOW_ITEM_GROUP_KEY, BOW_ITEM_GROUP);
 
@@ -205,6 +218,8 @@ public class ModBlocks {
             itemGroup.add(ModItems.DEEPWOOD_HANGING_SIGN);
             itemGroup.add(ModItems.DEEPWOOD_BOAT);
             itemGroup.add(ModItems.DEEPWOOD_CHEST_BOAT);
+            itemGroup.add(ModBlocks.DEEPWOOD_LEAVES.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_SAPLING.asItem());
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);

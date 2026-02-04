@@ -12,6 +12,8 @@ public class BestestOfWoodsBlockLootTableProvider extends FabricBlockLootTablePr
         super(dataOutput, registryLookup);
     }
 
+    public static final float[] SAPLING_DROP_CHANCE = new float[]{0.05F, 0.0625F, 0.083333336F, 0.1F};
+
     @Override
     public void generate() {
         addDrop(ModBlocks.DEEPWOOD_LOG);
@@ -29,5 +31,6 @@ public class BestestOfWoodsBlockLootTableProvider extends FabricBlockLootTablePr
         addDrop(ModBlocks.DEEPWOOD_DOOR, this::doorDrops);
         addDrop(ModBlocks.DEEPWOOD_SIGN);
         addDrop(ModBlocks.DEEPWOOD_HANGING_SIGN);
+        addDrop(ModBlocks.DEEPWOOD_LEAVES, leavesDrops(ModBlocks.DEEPWOOD_LEAVES, ModBlocks.DEEPWOOD_SAPLING, SAPLING_DROP_CHANCE));
     }
 }
