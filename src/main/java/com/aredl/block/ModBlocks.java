@@ -186,7 +186,7 @@ public class ModBlocks {
             .build();
 
     public static final Block DEEPWOOD_SAPLING = register(
-            new SaplingBlock(ModSaplingGenerators.DEEPWOOD, AbstractBlock.Settings.copy(Blocks.ACACIA_SAPLING)),
+            new SporeSaplingBlock(ModSaplingGenerators.DEEPWOOD, AbstractBlock.Settings.copy(Blocks.ACACIA_SAPLING)),
             "deepwood_sapling",
             true
     );
