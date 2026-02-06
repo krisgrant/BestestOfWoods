@@ -7,6 +7,6 @@ import net.minecraft.block.SaplingGenerator;
 import java.util.Optional;
 
 public class ModSaplingGenerators {
-    public static final SaplingGenerator DEEPWOOD = new SaplingGenerator(BestestOfWoods.MOD_ID + ":driftwood",
-            Optional.empty(), Optional.of(ModConfiguredFeatures.DEEPWOOD_KEY), Optional.empty());
+    public static final SaplingGenerator DEEPWOOD = new SaplingGenerator(BestestOfWoods.MOD_ID + ":deepwood",
+            Optional.empty(), Optional.of(ModConfiguredFeatures.DEEPWOOD_TREE_KEY), Optional.empty());
 }

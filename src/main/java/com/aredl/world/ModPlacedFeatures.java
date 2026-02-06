@@ -1,14 +1,14 @@
 package com.aredl.world;
 
 import com.aredl.BestestOfWoods;
-import com.aredl.block.ModBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
@@ -18,10 +18,16 @@ public class ModPlacedFeatures {
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
-        register(context, DEEPWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPWOOD_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 2), ModBlocks.DEEPWOOD_SAPLING
-                )
+        register(
+                context,
+                DEEPWOOD_PLACED_KEY,
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPWOOD_KEY),
+                CountPlacementModifier.of(UniformIntProvider.create(128, 216)),
+                SquarePlacementModifier.of(),
+                PlacedFeatures.BOTTOM_TO_120_RANGE,
+                //EnvironmentScanPlacementModifier.of(Direction.UP, BlockPredicate.solid(), BlockPredicate.IS_AIR, 12),
+                //RandomOffsetPlacementModifier.vertically(ConstantIntProvider.create(-1)),
+                BiomePlacementModifier.of()
         );
     }
 

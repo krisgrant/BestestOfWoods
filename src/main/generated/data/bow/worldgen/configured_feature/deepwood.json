@@ -1,55 +1,69 @@
 {
-  "type": "minecraft:tree",
+  "type": "minecraft:root_system",
   "config": {
-    "decorators": [],
-    "dirt_provider": {
+    "allowed_tree_position": {
+      "type": "minecraft:all_of",
+      "predicates": [
+        {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_block_tag",
+              "tag": "minecraft:sculk_replaceable"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:matching_blocks",
+          "blocks": "minecraft:sculk",
+          "offset": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    "allowed_vertical_water_for_tree": 2,
+    "feature": {
+      "feature": "bow:deepwood_tree",
+      "placement": []
+    },
+    "hanging_root_placement_attempts": 20,
+    "hanging_root_radius": 3,
+    "hanging_root_state_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:sculk_vein",
+        "Properties": {
+          "down": "false",
+          "east": "false",
+          "north": "false",
+          "south": "false",
+          "up": "false",
+          "waterlogged": "false",
+          "west": "false"
+        }
+      }
+    },
+    "hanging_roots_vertical_span": 2,
+    "required_vertical_space_for_tree": 3,
+    "root_column_max_height": 100,
+    "root_placement_attempts": 20,
+    "root_radius": 3,
+    "root_replaceable": "#minecraft:sculk_replaceable",
+    "root_state_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:sculk"
-      }
-    },
-    "foliage_placer": {
-      "type": "minecraft:cherry_foliage_placer",
-      "corner_hole_chance": 0.15,
-      "hanging_leaves_chance": 0.16666667,
-      "hanging_leaves_extension_chance": 0.33333334,
-      "height": 4,
-      "offset": 0,
-      "radius": 1,
-      "wide_bottom_layer_hole_chance": 0.15
-    },
-    "foliage_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "bow:deepwood_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
-        }
-      }
-    },
-    "force_dirt": false,
-    "ignore_vines": true,
-    "minimum_size": {
-      "type": "minecraft:two_layers_feature_size",
-      "limit": 0,
-      "lower_size": 0,
-      "upper_size": 0
-    },
-    "trunk_placer": {
-      "type": "minecraft:forking_trunk_placer",
-      "base_height": 2,
-      "height_rand_a": 2,
-      "height_rand_b": 2
-    },
-    "trunk_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "bow:deepwood_log",
-        "Properties": {
-          "axis": "y"
-        }
       }
     }
   }
