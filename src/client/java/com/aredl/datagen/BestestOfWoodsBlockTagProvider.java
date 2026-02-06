@@ -4,6 +4,7 @@ import com.aredl.BestestOfWoods;
 import com.aredl.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalBlockTags;
 import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
@@ -41,6 +42,12 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.STRIPPED_DEEPWOOD_LOG)
                 .add(ModBlocks.STRIPPED_DEEPWOOD_WOOD)
                 .add(ModBlocks.DEEPWOOD_LOG);
+        getOrCreateTagBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
+                .add(ModBlocks.DEEPWOOD_LOG);
+        getOrCreateTagBuilder(ConventionalBlockTags.STRIPPED_LOGS)
+                .add(ModBlocks.STRIPPED_DEEPWOOD_LOG);
+        getOrCreateTagBuilder(ConventionalBlockTags.STRIPPED_WOODS)
+                .add(ModBlocks.STRIPPED_DEEPWOOD_WOOD);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.DEEPWOOD_PLANKS);
@@ -62,6 +69,8 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_WALL_SIGN)
                 .add(ModBlocks.DEEPWOOD_HANGING_SIGN)
                 .add(ModBlocks.DEEPWOOD_WALL_HANGING_SIGN)
+                .add(ModBlocks.DEEPWOOD_SPORES)
+                .add(ModBlocks.DEEPWOOD_SAPLING)
                 .add(ModBlocks.DEEPWOOD_LOG);
         getOrCreateTagBuilder(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
                 .add(ModBlocks.DEEPWOOD_PLANKS)
@@ -80,6 +89,8 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_WALL_SIGN)
                 .add(ModBlocks.DEEPWOOD_HANGING_SIGN)
                 .add(ModBlocks.DEEPWOOD_WALL_HANGING_SIGN)
+                .add(ModBlocks.DEEPWOOD_SPORES)
+                .add(ModBlocks.DEEPWOOD_SAPLING)
                 .add(ModBlocks.DEEPWOOD_LOG);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -131,5 +142,13 @@ public class BestestOfWoodsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(ModBlocks.DEEPWOOD_HANGING_SIGN);
         getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
                 .add(ModBlocks.DEEPWOOD_WALL_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.DEEPWOOD_SPORES);
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.DEEPWOOD_SPORES);
+
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(ModBlocks.DEEPWOOD_SAPLING);
     }
 }

@@ -5,6 +5,7 @@ import com.aredl.block.ModBlocks;
 import com.aredl.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
@@ -42,6 +43,10 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModBlocks.STRIPPED_DEEPWOOD_LOG.asItem())
                 .add(ModBlocks.STRIPPED_DEEPWOOD_WOOD.asItem())
                 .add(ModBlocks.DEEPWOOD_LOG.asItem());
+        getOrCreateTagBuilder(ConventionalItemTags.STRIPPED_LOGS)
+                .add(ModBlocks.STRIPPED_DEEPWOOD_LOG.asItem());
+        getOrCreateTagBuilder(ConventionalItemTags.STRIPPED_WOODS)
+                .add(ModBlocks.STRIPPED_DEEPWOOD_WOOD.asItem());
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.DEEPWOOD_PLANKS.asItem());
@@ -108,5 +113,11 @@ public class BestestOfWoodsItemTagProvider extends FabricTagProvider<Item> {
                 .add(ModItems.DEEPWOOD_CHEST_BOAT);
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS)
                 .add(ModItems.DEEPWOOD_CHEST_BOAT);
+
+        getOrCreateTagBuilder(ItemTags.LEAVES)
+                .add(ModBlocks.DEEPWOOD_SPORES.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SAPLINGS)
+                .add(ModBlocks.DEEPWOOD_SAPLING.asItem());
     }
 }
