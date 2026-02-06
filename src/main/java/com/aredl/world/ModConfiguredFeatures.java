@@ -30,7 +30,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.DEEPWOOD_LOG),
                 new ForkingTrunkPlacer(2, 2, 2),
 
-                BlockStateProvider.of(ModBlocks.DEEPWOOD_LEAVES),
+                BlockStateProvider.of(ModBlocks.DEEPWOOD_SPORES),
                 new CherryFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(0), ConstantIntProvider.create(4), 0.15F, 0.5F, 0.16666667F, 0.33333334F),
 
                 new TwoLayersFeatureSize(3, 0, 4)).dirtProvider(BlockStateProvider.of(Blocks.SCULK)).ignoreVines().build());

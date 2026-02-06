@@ -31,6 +31,6 @@ public class BestestOfWoodsBlockLootTableProvider extends FabricBlockLootTablePr
         addDrop(ModBlocks.DEEPWOOD_DOOR, this::doorDrops);
         addDrop(ModBlocks.DEEPWOOD_SIGN);
         addDrop(ModBlocks.DEEPWOOD_HANGING_SIGN);
-        addDrop(ModBlocks.DEEPWOOD_LEAVES, leavesDrops(ModBlocks.DEEPWOOD_LEAVES, ModBlocks.DEEPWOOD_SAPLING, SAPLING_DROP_CHANCE));
+        addDrop(ModBlocks.DEEPWOOD_SPORES, leavesDrops(ModBlocks.DEEPWOOD_SPORES, ModBlocks.DEEPWOOD_SAPLING, SAPLING_DROP_CHANCE));
     }
 }

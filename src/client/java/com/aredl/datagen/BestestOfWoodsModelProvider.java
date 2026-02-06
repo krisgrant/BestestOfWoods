@@ -34,7 +34,7 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.DEEPWOOD_DOOR);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_DEEPWOOD_LOG, ModBlocks.DEEPWOOD_HANGING_SIGN, ModBlocks.DEEPWOOD_WALL_HANGING_SIGN);
         blockStateModelGenerator.registerTintableCross(ModBlocks.DEEPWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerSingleton(ModBlocks.DEEPWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerSingleton(ModBlocks.DEEPWOOD_SPORES, TexturedModel.LEAVES);
     }
 
     @Override

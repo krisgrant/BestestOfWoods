@@ -191,9 +191,9 @@ public class ModBlocks {
             true
     );
 
-    public static final Block DEEPWOOD_LEAVES = register(
+    public static final Block DEEPWOOD_SPORES = register(
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_LEAVES)),
-            "deepwood_leaves",
+            "deepwood_spores",
             true
     );
 
@@ -203,23 +203,23 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(BOW_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModBlocks.DEEPWOOD_LOG.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_WOOD.asItem());
-            itemGroup.add(ModBlocks.DEEPWOOD_PLANKS.asItem());
             itemGroup.add(ModBlocks.STRIPPED_DEEPWOOD_LOG.asItem());
             itemGroup.add(ModBlocks.STRIPPED_DEEPWOOD_WOOD.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_PLANKS.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_STAIRS.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_SLAB.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_FENCE.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_FENCE_GATE.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_DOOR.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_TRAPDOOR.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_PRESSURE_PLATE.asItem());
             itemGroup.add(ModBlocks.DEEPWOOD_BUTTON.asItem());
-            itemGroup.add(ModBlocks.DEEPWOOD_TRAPDOOR.asItem());
-            itemGroup.add(ModBlocks.DEEPWOOD_DOOR.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_SPORES.asItem());
+            itemGroup.add(ModBlocks.DEEPWOOD_SAPLING.asItem());
             itemGroup.add(ModItems.DEEPWOOD_SIGN);
             itemGroup.add(ModItems.DEEPWOOD_HANGING_SIGN);
             itemGroup.add(ModItems.DEEPWOOD_BOAT);
             itemGroup.add(ModItems.DEEPWOOD_CHEST_BOAT);
-            itemGroup.add(ModBlocks.DEEPWOOD_LEAVES.asItem());
-            itemGroup.add(ModBlocks.DEEPWOOD_SAPLING.asItem());
         });
 
         StrippableBlockRegistry.register(DEEPWOOD_LOG, STRIPPED_DEEPWOOD_LOG);
