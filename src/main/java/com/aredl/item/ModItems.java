@@ -29,11 +29,28 @@ public class ModItems {
             "deepwood_hanging_sign"
     );
 
+    public static final Item GREEN_AZALEA_SIGN = register(
+            new SignItem(new Item.Settings().maxCount(16), ModBlocks.GREEN_AZALEA_SIGN, ModBlocks.GREEN_AZALEA_WALL_SIGN),
+            "green_azalea_sign"
+    );
+    public static final Item GREEN_AZALEA_HANGING_SIGN = register(
+            new HangingSignItem(ModBlocks.GREEN_AZALEA_HANGING_SIGN, ModBlocks.GREEN_AZALEA_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)),
+            "green_azalea_hanging_sign"
+    );
+
     public static final Identifier DEEPWOOD_BOAT_ITEM_ID = Identifier.of(BestestOfWoods.MOD_ID, "deepwood_boat");
     public static final Identifier DEEPWOOD_CHEST_BOAT_ITEM_ID = Identifier.of(BestestOfWoods.MOD_ID, "deepwood_chest_boat");
 
+    public static final Identifier GREEN_AZALEA_BOAT_ITEM_ID = Identifier.of(BestestOfWoods.MOD_ID, "green_azalea_boat");
+    public static final Identifier GREEN_AZALEA_CHEST_BOAT_ITEM_ID = Identifier.of(BestestOfWoods.MOD_ID, "green_azalea_chest_boat");
+
     public static final Item DEEPWOOD_BOAT = TerraformBoatItemHelper.registerBoatItem(DEEPWOOD_BOAT_ITEM_ID, ModBoats.DEEPWOOD_BOAT_KEY, false);
     public static final Item DEEPWOOD_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(DEEPWOOD_CHEST_BOAT_ITEM_ID, ModBoats.DEEPWOOD_BOAT_KEY, true);
+
+    public static final Item GREEN_AZALEA_BOAT = TerraformBoatItemHelper.registerBoatItem(GREEN_AZALEA_BOAT_ITEM_ID, ModBoats.GREEN_AZALEA_BOAT_KEY, false);
+    public static final Item GREEN_AZALEA_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(GREEN_AZALEA_CHEST_BOAT_ITEM_ID, ModBoats.GREEN_AZALEA_BOAT_KEY, true);
+
+
 
     public static void initialize() {
     }

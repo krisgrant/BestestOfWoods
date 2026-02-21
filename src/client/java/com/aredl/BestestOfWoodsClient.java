@@ -14,7 +14,12 @@ public class BestestOfWoodsClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_TRAPDOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPWOOD_SAPLING, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_DEEPWOOD_SAPLING, RenderLayer.getCutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_AZALEA_TRAPDOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_AZALEA_DOOR, RenderLayer.getCutout());
 
 		TerraformBoatClientHelper.registerModelLayers(ModBoats.DEEPWOOD_BOAT_ID, false);
+		TerraformBoatClientHelper.registerModelLayers(ModBoats.GREEN_AZALEA_BOAT_ID, false);
 	}
 }

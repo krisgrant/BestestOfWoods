@@ -50,5 +50,37 @@ public class BestestOfWoodsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
         offerBoatRecipe(recipeExporter, ModItems.DEEPWOOD_BOAT, ModBlocks.DEEPWOOD_PLANKS);
         offerChestBoatRecipe(recipeExporter, ModItems.DEEPWOOD_CHEST_BOAT, ModItems.DEEPWOOD_BOAT);
+
+        offerPlanksRecipe(recipeExporter, ModBlocks.GREEN_AZALEA_PLANKS, BestestOfWoodsItemTagProvider.GREEN_AZALEA_LOGS, 4);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.GREEN_AZALEA_WOOD, ModBlocks.GREEN_AZALEA_LOG);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.STRIPPED_GREEN_AZALEA_WOOD, ModBlocks.STRIPPED_GREEN_AZALEA_LOG);
+        createStairsRecipe(ModBlocks.GREEN_AZALEA_STAIRS, Ingredient.ofItems(ModBlocks.GREEN_AZALEA_PLANKS))
+                .criterion(hasItem(ModBlocks.GREEN_AZALEA_PLANKS), conditionsFromItem(ModBlocks.GREEN_AZALEA_PLANKS))
+                .offerTo(recipeExporter);
+        offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_AZALEA_SLAB, ModBlocks.GREEN_AZALEA_PLANKS);
+        createFenceRecipe(ModBlocks.GREEN_AZALEA_FENCE, Ingredient.ofItems(ModBlocks.GREEN_AZALEA_PLANKS))
+                .criterion(hasItem(ModBlocks.GREEN_AZALEA_PLANKS), conditionsFromItem(ModBlocks.GREEN_AZALEA_PLANKS))
+                .offerTo(recipeExporter);
+        createFenceGateRecipe(ModBlocks.GREEN_AZALEA_FENCE_GATE, Ingredient.ofItems(ModBlocks.GREEN_AZALEA_PLANKS))
+                .criterion(hasItem(ModBlocks.GREEN_AZALEA_PLANKS), conditionsFromItem(ModBlocks.GREEN_AZALEA_PLANKS))
+                .offerTo(recipeExporter);
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.GREEN_AZALEA_PRESSURE_PLATE, ModBlocks.GREEN_AZALEA_PLANKS);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.GREEN_AZALEA_BUTTON)
+                .input(Ingredient.ofItems(ModBlocks.GREEN_AZALEA_PLANKS))
+                .group("wooden_button")
+                .criterion(hasItem(ModBlocks.GREEN_AZALEA_PLANKS), conditionsFromItem(ModBlocks.GREEN_AZALEA_PLANKS))
+                .offerTo(recipeExporter);
+        createTrapdoorRecipe(ModBlocks.GREEN_AZALEA_TRAPDOOR, Ingredient.ofItems(ModBlocks.GREEN_AZALEA_PLANKS))
+                .criterion(hasItem(ModBlocks.GREEN_AZALEA_PLANKS), conditionsFromItem(ModBlocks.GREEN_AZALEA_PLANKS))
+                .offerTo(recipeExporter);
+        createDoorRecipe(ModBlocks.GREEN_AZALEA_DOOR, Ingredient.ofItems(ModBlocks.GREEN_AZALEA_PLANKS))
+                .criterion(hasItem(ModBlocks.GREEN_AZALEA_PLANKS), conditionsFromItem(ModBlocks.GREEN_AZALEA_PLANKS))
+                .offerTo(recipeExporter);
+        offerHangingSignRecipe(recipeExporter, ModItems.GREEN_AZALEA_HANGING_SIGN, ModBlocks.STRIPPED_GREEN_AZALEA_LOG);
+        createSignRecipe(ModItems.GREEN_AZALEA_SIGN, Ingredient.ofItems(ModBlocks.GREEN_AZALEA_PLANKS))
+                .criterion(hasItem(ModBlocks.GREEN_AZALEA_PLANKS), conditionsFromItem(ModBlocks.GREEN_AZALEA_PLANKS))
+                .offerTo(recipeExporter);
+        offerBoatRecipe(recipeExporter, ModItems.GREEN_AZALEA_BOAT, ModBlocks.GREEN_AZALEA_PLANKS);
+        offerChestBoatRecipe(recipeExporter, ModItems.GREEN_AZALEA_CHEST_BOAT, ModItems.GREEN_AZALEA_BOAT);
     }
 }

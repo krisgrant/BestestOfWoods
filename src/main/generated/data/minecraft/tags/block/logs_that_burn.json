@@ -3,6 +3,10 @@
     "bow:deepwood_wood",
     "bow:stripped_deepwood_log",
     "bow:stripped_deepwood_wood",
-    "bow:deepwood_log"
+    "bow:deepwood_log",
+    "bow:green_azalea_log",
+    "bow:stripped_green_azalea_log",
+    "bow:stripped_green_azalea_wood",
+    "bow:green_azalea_wood"
   ]
 }

@@ -33,14 +33,35 @@ public class BestestOfWoodsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.DEEPWOOD_TRAPDOOR);
         blockStateModelGenerator.registerDoor(ModBlocks.DEEPWOOD_DOOR);
         blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_DEEPWOOD_LOG, ModBlocks.DEEPWOOD_HANGING_SIGN, ModBlocks.DEEPWOOD_WALL_HANGING_SIGN);
-        blockStateModelGenerator.registerTintableCross(ModBlocks.DEEPWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DEEPWOOD_SAPLING, ModBlocks.POTTED_DEEPWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerSingleton(ModBlocks.DEEPWOOD_SPORES, TexturedModel.LEAVES);
+
+        blockStateModelGenerator.registerLog(ModBlocks.GREEN_AZALEA_LOG)
+                .log(ModBlocks.GREEN_AZALEA_LOG)
+                .wood(ModBlocks.GREEN_AZALEA_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GREEN_AZALEA_LOG)
+                .log(ModBlocks.STRIPPED_GREEN_AZALEA_LOG)
+                .wood(ModBlocks.STRIPPED_GREEN_AZALEA_WOOD);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GREEN_AZALEA_PLANKS)
+                .slab(ModBlocks.GREEN_AZALEA_SLAB)
+                .fence(ModBlocks.GREEN_AZALEA_FENCE)
+                .fenceGate(ModBlocks.GREEN_AZALEA_FENCE_GATE)
+                .pressurePlate(ModBlocks.GREEN_AZALEA_PRESSURE_PLATE)
+                .button(ModBlocks.GREEN_AZALEA_BUTTON)
+                .stairs(ModBlocks.GREEN_AZALEA_STAIRS)
+                .family(ModBlocks.GREEN_AZALEA_FAMILY);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.GREEN_AZALEA_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.GREEN_AZALEA_DOOR);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_GREEN_AZALEA_LOG, ModBlocks.GREEN_AZALEA_HANGING_SIGN, ModBlocks.GREEN_AZALEA_WALL_HANGING_SIGN);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.DEEPWOOD_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.DEEPWOOD_CHEST_BOAT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.GREEN_AZALEA_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREEN_AZALEA_CHEST_BOAT, Models.GENERATED);
     }
 
     @Override

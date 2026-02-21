@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bow:block/green_azalea_slab"
+    },
+    "type=double": {
+      "model": "bow:block/green_azalea_planks"
+    },
+    "type=top": {
+      "model": "bow:block/green_azalea_slab_top"
+    }
+  }
+}
